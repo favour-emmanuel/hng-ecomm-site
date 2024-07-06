@@ -9,7 +9,7 @@ const Nav = () => {
   };
   return (
     <nav className="sticky top-0 z-50 py-3.5 border-b border-neutral-700/80 backdrop-blur-lg bg-appBlack text-white">
-      <div className="container px-8 mx-auto text-sm relative">
+      <div className="container lg:px-14 px-8 mx-auto text-sm relative">
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-bold tracking-tight">Techtrove</h1>
           <ul className="hidden lg:flex ml-14 space-x-12">
