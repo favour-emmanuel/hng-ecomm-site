@@ -1,5 +1,3 @@
-import React from "react";
-
 const Service = () => {
   return <div className="flex items-center gap-4">Service</div>;
 };
