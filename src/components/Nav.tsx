@@ -89,7 +89,7 @@ const Nav = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-full max-w-[23rem] md:max-w-[29rem] py-3  h-screen bg-[#262626] z-10 duration-300"
+              ? "fixed left-0 top-0 w-full max-w-[23rem] py-3  h-screen bg-[#262626] z-10 duration-300"
               : "fixed left-[-100%] top-0 min-h-[90vh] z-10 duration-300"
           }
         >
