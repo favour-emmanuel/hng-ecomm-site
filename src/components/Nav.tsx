@@ -69,35 +69,69 @@ const Nav = () => {
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNav}>
-              {nav ? (
-                <span className="text-2xl transition-transform">
-                  <Icon icon="mingcute:close-line" />
-                </span>
-              ) : (
+              {!nav ? (
                 <span className="text-2xl transition-transform">
                   <Icon icon="mingcute:menu-line" />
                 </span>
+              ) : (
+                ""
               )}
             </button>
           </div>
         </div>
       </div>
-      {nav && (
-        <div className="lg:hidden fixed duration-300 ease-in-out right-0 top-[3.6rem]  z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center">
-          <ul>
+      <div className=" lg:hidden ">
+        {nav ? (
+          <div className="bg-appBlack/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+        ) : (
+          ""
+        )}
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 w-full max-w-[23rem] md:max-w-[29rem] py-3  h-screen bg-[#262626] z-10 duration-300"
+              : "fixed left-[-100%] top-0 min-h-[90vh] z-10 duration-300"
+          }
+        >
+          <div className="pb-4 w-full border-b border-white/15">
+            <div className="px-8">
+              <h1 className="text-xl font-bold tracking-tight">
+                <Link to={"/"}>
+                  Tech <span className="text-[#2dcbab]">trove</span>
+                </Link>
+              </h1>
+              <span className="absolute right-4 top-4 cursor-pointer font-bold text-lg text-appsecondary">
+                {" "}
+                <Icon
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  icon="icon-park-outline:close"
+                />
+              </span>
+            </div>
+          </div>
+          <ul className="flex flex-col  gap-5 cursor-pointer mt-10 px-8">
             {navItems.map((item, index) => (
-              <li key={index} className="py-4" onClick={item.onclick}>
+              <li
+                key={index}
+                className="py-4 hover:text-[#2dcbab]"
+                onClick={item.onclick}
+              >
                 <a href={item.path}>{item.label}</a>
               </li>
             ))}
           </ul>
-          <div className="flex space-x-5">
-            <a href="#" className="py-2 px-3 border rounded-md">
+          <div className="flex space-x-5 px-8 mt-5">
+            <a
+              href="#"
+              className="py-2 px-3 border rounded-md hover:border-[#2dcbab]"
+            >
               Sign In
             </a>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

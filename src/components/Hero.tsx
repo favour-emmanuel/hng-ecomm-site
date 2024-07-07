@@ -17,11 +17,13 @@ const Hero = () => {
         <div className="mt-6">
           <div className="flex gap-3 items-center my-3">
             <h3 className="border border-b w-full max-w-[4rem]"></h3>
-            <h3 className="font-medium">Related Product</h3>
-            <h3 className="border border-b w-full max-w-[20rem]"></h3>
-            <h3 className="border border-b w-full max-w-[10rem] absolute right-2"></h3>
+            <h3 className="font-medium lg:text-base text-sm ">
+              Related Product
+            </h3>
+            <h3 className="border border-b w-full lg:max-w-[20rem] max-w-[10rem]"></h3>
+            <h3 className="border border-b w-full max-w-[10rem] absolute right-2 hidden lg:block"></h3>
           </div>
-          <div className="flex items-center space-x-3 w-full max-w-[6rem]">
+          <div className="grid grid-cols-4 gap-x-4 my-5 items-center w-full lg:max-w-[20rem] max-w-[18rem]">
             <img
               src={img1}
               alt=""
@@ -46,7 +48,11 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full max-w-6xl">
-        <img src={heroImg} alt="" className="relative top-[-6rem]" />
+        <img
+          src={heroImg}
+          alt=""
+          className="relative top-[-6rem] lg:mt-0 mt-8"
+        />
         {/* <img
           src={heroImg}
           alt=""
