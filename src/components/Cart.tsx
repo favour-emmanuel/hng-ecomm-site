@@ -1,21 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import img6 from "../assets/img6.png";
+import { Link, useLocation } from "react-router-dom";
 import img10 from "../assets/img10.png";
 import img12 from "../assets/img12.png";
+import img6 from "../assets/img6.png";
 import Nav from "./Nav";
-import { useState } from "react";
-import Footer from "./Footer";
-
-interface CartItem {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  quantity: number;
-  image: string;
-  color: "Blue" | "Pink" | "White";
-}
 
 const Cart: React.FC = () => {
   const location = useLocation();
