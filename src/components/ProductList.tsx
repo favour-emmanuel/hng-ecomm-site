@@ -49,7 +49,7 @@ const ProductList: React.FC = () => {
         {location.pathname === "/products" ? (
           <h3 className="text-base font-medium">
             <Link to={"/"} className="flex items-center">
-              <span>
+              <span className="text-lg">
                 <Icon icon="fluent:chevron-left-16-regular" />
               </span>
               Back
