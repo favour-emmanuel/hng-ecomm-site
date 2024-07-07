@@ -28,7 +28,7 @@ const Checkout: React.FC = () => {
             <input
               type="text"
               placeholder="Enter card number"
-              className="w-full border-b text-xs pt-3 pb-1 text-gray-400"
+              className="w-full border-b text-xs pt-3 pb-1 text-gray-400 outline-none"
             />
           </div>
           <div className="my-4">
@@ -44,12 +44,12 @@ const Checkout: React.FC = () => {
               <input
                 type="text"
                 placeholder="MM/YY"
-                className="w-full border-b text-xs pt-3 pb-1 text-gray-400"
+                className="w-full border-b text-xs pt-3 pb-1 text-gray-400 outline-none"
               />
               <input
                 type="text"
-                placeholder="00/00"
-                className="w-full border-b text-xs pt-3 pb-1 text-gray-400 text-right"
+                placeholder="CVV"
+                className="w-full border-b text-xs pt-3 pb-1 text-gray-400 text-right outline-none"
               />
             </div>
           </div>
@@ -61,7 +61,7 @@ const Checkout: React.FC = () => {
           </div>
         </form>
         <h3 className="text-base font-medium mt-7">
-          <Link to={"/"} className="flex items-center">
+          <Link to={"/cart"} className="flex items-center">
             <span className="text-lg">
               <Icon icon="fluent:chevron-left-16-regular" />
             </span>
