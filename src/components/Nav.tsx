@@ -40,7 +40,7 @@ const Nav = () => {
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-bold tracking-tight">
             <Link to={"/"}>
-              Tech <span className="text-[#2dcbab]">trove</span>
+              Tech<span className="text-[#2dcbab]">trove</span>
             </Link>
           </h1>
           <ul className="hidden lg:flex ml-14 space-x-12">
