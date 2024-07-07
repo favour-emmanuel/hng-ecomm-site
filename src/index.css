@@ -8,6 +8,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  @apply bg-gray-100;
+}
+
 .transition-transform {
   transition: transform 0.3s ease-in-out;
 }

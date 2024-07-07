@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className="text-4xl scroll-mx-6 py-8 lg:text-5xl tracking-wide font-PPHatton w-full">
           Immerse yourself in crystal-clear sound and comfort
         </h1>
-        <button className="py-3.5 bg-[#0066D9] rounded-md w-full text-sm max-w-[8rem] my-3">
+        <button className="py-3.5 bg-[#209279] rounded-md w-full text-sm max-w-[8rem] my-3">
           Buy Now
         </button>
         <div className="mt-6">
@@ -47,11 +47,11 @@ const Hero = () => {
       </div>
       <div className="w-full max-w-6xl">
         <img src={heroImg} alt="" className="relative top-[-6rem]" />
-        <img
+        {/* <img
           src={heroImg}
           alt=""
           className="hidden lg:block mirror-image relative top-[-15rem] max-w-[10rem]"
-        />
+        /> */}
       </div>
     </div>
   );
