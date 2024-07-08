@@ -14,9 +14,9 @@ const Nav = () => {
   const navItems = [
     {
       label: "Home",
-      path: "/home",
+      path: "/",
       onclick: () => {
-        navigate("/home");
+        navigate("/");
       },
     },
     {
