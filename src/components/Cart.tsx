@@ -48,7 +48,7 @@ const Cart: React.FC = () => {
           </p>
           <Link
             to="/checkout"
-            className="bg-[#1c8f78] text-white  text-sm px-4 py-2.5 mt-4 rounded flex items-center"
+            className="bg-[#1c8f78] text-white lg:text-sm text-[13px] px-4 py-2.5 mt-4 rounded flex items-center"
           >
             Proceed to Checkout
             <span className="text-lg">
@@ -67,15 +67,17 @@ const Cart: React.FC = () => {
                   <img src={item.image} alt="" className="w-28" />
                 </div>
                 <div>
-                  <h2 className="lg:text-lg text-sm font-bold">{item.name}</h2>
+                  <h2 className="lg:text-lg text-[13px] font-bold">
+                    {item.name}
+                  </h2>
                   <p className="text-gray-700 lg:text-base text-sm">
                     {item.description}
                   </p>
                 </div>
               </div>
-              <p className="text-sm mx-auto">{item.color}</p>
+              <p className="lg:text-xs text-xs mx-auto">{item.color}</p>
               <div className="flex items-center gap-3">
-                <p>{item.quantity}</p>
+                <p className="text-sm mx-2">{item.quantity}</p>
                 <div>
                   <div className="flex flex-col gap-y-3">
                     <button className="bg-[#1c8f78] px-2 rounded-md">
