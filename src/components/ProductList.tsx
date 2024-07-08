@@ -1,17 +1,17 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import img66 from "../assets/img-6.png";
 import img1 from "../assets/img1.png";
+import img10 from "../assets/img10.png";
+import img11 from "../assets/img11.png";
+import img12 from "../assets/img12.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
 import img4 from "../assets/img4.png";
 import img5 from "../assets/img5.png";
-import img6 from "../assets/img6.png";
 import img7 from "../assets/img7.png";
 import img8 from "../assets/img8.png";
 import img9 from "../assets/img9.png";
-import img10 from "../assets/img10.png";
-import img11 from "../assets/img11.png";
-import img12 from "../assets/img12.png";
 
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Footer from "./Footer";
@@ -26,18 +26,18 @@ interface Product {
 
 const ProductList: React.FC = () => {
   const products: Product[] = [
-    { id: 1, name: "Soundcraper", price: "$70", image: img1 },
-    { id: 2, name: "Audioshield", price: "$40", image: img2 },
-    { id: 3, name: "Soundcraper", price: "$60", image: img3 },
-    { id: 4, name: "Audioshield", price: "$85", image: img4 },
-    { id: 5, name: "Soundscraper", price: "$100", image: img5 },
-    { id: 6, name: "Audioshield", price: "$120", image: img6 },
-    { id: 8, name: "Soundscraper", price: "$150", image: img8 },
-    { id: 7, name: "Audioshield", price: "$200", image: img7 },
-    { id: 7, name: "Soundscraper", price: "$200", image: img9 },
-    { id: 7, name: "Audioshield", price: "$120", image: img10 },
-    { id: 7, name: "Soundscraper", price: "$265", image: img11 },
-    { id: 7, name: "Audioshield", price: "$180", image: img12 },
+    { id: 1, name: "Plantronics Voyager 520", price: "$29", image: img1 },
+    { id: 2, name: "Klipsch Pro 2", price: "$37", image: img2 },
+    { id: 3, name: "Plantronics M50", price: "$50", image: img3 },
+    { id: 4, name: "Klipsch S1M ", price: "$34", image: img4 },
+    { id: 5, name: "JBL Club 500", price: "$57", image: img8 },
+    { id: 6, name: "Klipsch Heritage 3", price: "$68", image: img66 },
+    { id: 7, name: "Denon AH-D9200", price: "$150", image: img12 },
+    { id: 8, name: "Plantonics M70", price: "$77", image: img5 },
+    { id: 9, name: "JBL Tour 400", price: "$45", image: img7 },
+    { id: 10, name: "SteelSeries Arctis 9X", price: "$65", image: img9 },
+    { id: 11, name: "Skullcandy SLYR", price: "$23", image: img10 },
+    { id: 12, name: "Denon AH-D9200", price: "$29", image: img11 },
   ];
 
   const location = useLocation();
@@ -60,7 +60,7 @@ const ProductList: React.FC = () => {
         )}
 
         <h1 className="text-2xl font-bold my-4">Product Listing</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {products.map((product) => (
             <div
               key={product.id}
